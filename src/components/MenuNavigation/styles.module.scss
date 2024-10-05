@@ -1,0 +1,45 @@
+$mainColor: #EC3D54;
+
+.navigation {
+  .list {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    list-style: none;
+    column-gap: 5rem;
+
+    .item {
+      cursor: pointer;
+
+      a {
+        color: #000;
+        text-decoration: none;
+        position: relative;
+        transition: color 0.3s linear;
+
+        &.active {
+          color: $mainColor;
+        }
+
+        &:after {
+          content: '';
+          position: absolute;
+          width: 0%;
+          height: 2px;
+          bottom: -.5rem;
+          left: 0;
+          background-color: $mainColor;
+          transition: width 0.3s linear;
+        }
+
+        &:hover {
+          color: $mainColor;
+
+          &:after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

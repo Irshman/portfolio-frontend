@@ -1,0 +1,44 @@
+$mainColor: #EC3D54;
+
+.swiper {
+  width: 70%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 1.25rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  span {
+    color: #807d7d;
+    font-size: .8rem;
+    padding: .5rem;
+  }
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: 1.5rem;
+}
+
+.swiper-pagination-bullet {
+  width: 3rem;
+  height: .4rem;
+  border-radius: .5rem;
+
+  &-active {
+    background-color: $mainColor;
+  }
+}

@@ -1,0 +1,24 @@
+$mainColor: #EC3D54;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+
+  @media (max-width:768px){
+    padding: 1rem 0;
+  }
+
+  &__branch {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: $mainColor;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

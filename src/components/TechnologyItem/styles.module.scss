@@ -1,0 +1,32 @@
+.skill {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: .8rem;
+
+  .name {
+    text-align: left;
+    white-space: nowrap;
+    margin: 0 .5rem 0 0;
+    font-size: .8rem;
+    flex-shrink: 0;
+    color: #424242;
+
+    &:hover {
+      cursor: default;
+    }
+  }
+
+  .progressbar {
+    flex-grow: 1;
+    max-width: 600px;
+    height: 10px;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}
+
+
+

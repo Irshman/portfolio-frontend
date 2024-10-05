@@ -1,0 +1,34 @@
+.main {
+  background: #fff;
+}
+
+.image {
+  width: 100px;
+  height: 200px;
+}
+
+.title {
+  color: #ec3d54;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: .7rem 0 1.3rem;
+  position: relative;
+
+  &:before {
+    background-color: #ec3d54;
+    bottom: -.4rem;
+    content: "";
+    height: .14em;
+    left: 0;
+    position: absolute;
+    width: 70%;
+  }
+}
+
+.cards {
+  grid-gap: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  margin: 3rem 0;
+}
